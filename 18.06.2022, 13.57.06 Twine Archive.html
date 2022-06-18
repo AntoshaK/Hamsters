@@ -1,0 +1,49 @@
+<tw-storydata name="Хомяки" startnode="1" creator="Twine" creator-version="2.3.16" ifid="E3EE06EF-CC7A-42D6-9505-AB281523979A" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Начало" tags="" position="479,104" size="100,100">Вы представитель разумной расы хомяков и бороздите космические просторы 
+
+Как вас зовут?
+[[Лапуся]]
+[[Горошек]]
+[[Невезучка]]
+(set: $Health to true)
+(set: $Cabel to false)</tw-passagedata><tw-passagedata pid="2" name="Лапуся" tags="" position="217,366" size="100,100">Ваша милость может устпупить лишь вашим лидерским качествам, капитан Лапуся
+
+[[Продолжить полет]]</tw-passagedata><tw-passagedata pid="3" name="Горошек" tags="" position="670,361" size="100,100">Отличный выбор, капитан Горошек
+
+[[Продолжить полет]]</tw-passagedata><tw-passagedata pid="4" name="Невезучка" tags="" position="774,139" size="100,100">Вам не повезло подцепить космичемкую инфекцию, но не расстраивайтесь -
+в хомячем раю хорошо кормят</tw-passagedata><tw-passagedata pid="5" name="Продолжить полет" tags="" position="431,525" size="100,100">Вы пролетаете мимо пояса Ориона
+
+[[Полюбоваться]]
+[[Лететь дальше]]
+[[Погрызть кабель]]</tw-passagedata><tw-passagedata pid="6" name="Полюбоваться" tags="" position="199,693" size="100,100">Вы заворожены видом звезд, возможно вы были бы больше рады увидеть Oreo,
+но и это неплохо
+
+Вы замечаете еще одно космическое судно
+[[Связаться]]
+[[Атаковать]]</tw-passagedata><tw-passagedata pid="7" name="Лететь дальше" tags="" position="938,759" size="100,100">Нечего тратить время попусту
+
+[[Продолжить]]</tw-passagedata><tw-passagedata pid="8" name="Погрызть кабель" tags="" position="1235,685" size="100,100">Виды звезд всегда возбуждают у вас аппетит, но это не повод 
+сьедать оборудование корабля!
+
+(set: $Cabel to true)
+[[Продолжить]]</tw-passagedata><tw-passagedata pid="9" name="Связаться" tags="" position="76,862" size="100,100">Вы слышите до боли знакомый голос
+На корабле ваши братья хомяки!
+
+[[Лететь дальше вместе]]</tw-passagedata><tw-passagedata pid="10" name="Атаковать" tags="" position="353,872" size="100,100">Вы вступили в неравный бой с неизвестными обитателями космоса
+Обшивка вашего судна была повреждена
+
+(set: $Health to false)
+
+[[Отступить и полететь дальше]]
+[[Продолжить битву]]</tw-passagedata><tw-passagedata pid="11" name="Лететь дальше вместе" tags="" position="90,1069" size="100,100">Вы рады снова встретиться с хомяками - вместе веселее!
+
+[[Продолжить]]</tw-passagedata><tw-passagedata pid="12" name="Отступить и полететь дальше" tags="" position="593,993" size="100,100">Вы спасли корабль и идете навстречу новым приключениям
+
+[[Продолжить]]</tw-passagedata><tw-passagedata pid="13" name="Продолжить битву" tags="" position="607,706" size="100,100">Вы умерли - какая жалость.</tw-passagedata><tw-passagedata pid="14" name="Продолжить" tags="" position="845,1301" size="100,100">О нет! Вы попали под метеоритный дождь
+
+[[Лететь сквозь него]]
+[[Притормозить]]
+[[Замереть в страхе]]</tw-passagedata><tw-passagedata pid="15" name="Лететь сквозь него" tags="" position="602,1449" size="100,100">(if:$Health is true)[Вам удалось вылететь из метеоритного дождя целыми, вас ждет много новых приключений!]
+(if:$Health is false)[Космос это жестокое место, вам не удалось выжить, как и вашим сородичам из того корабля - Справедливость восторжествовала]</tw-passagedata><tw-passagedata pid="16" name="Притормозить" tags="" position="1151,1420" size="100,100">(if:$Cabel is false)[Вам удается затормозить и спастить - Браво]
+(if:$Cabel is true)[Никто так и не понял, почему тормоза не сработали, но это уже не имеет значения - все погибли. Но о вас будут помнить ваши сородичи]</tw-passagedata><tw-passagedata pid="17" name="Замереть в страхе" tags="" position="845,1451" size="100,100">Вы просыпаетесь в вашем уютном деревянном домике и идете пить воду из поилочки
+Это был лишь сон...</tw-passagedata></tw-storydata>
+
